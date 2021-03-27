@@ -1,0 +1,1 @@
+Segundo intento, tuve que restaurar imagen y se me corrompio la imagen de vagrant en ubuntu.
