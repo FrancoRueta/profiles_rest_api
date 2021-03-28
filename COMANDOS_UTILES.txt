@@ -1,0 +1,19 @@
+|-INICIAR VAGRANT-|
+vagrant up
+vagrant ssh
+|-UNA VEZ DENTRO DE LINUX-|
+cd /vagrant/
+|-ACTIVAR EL ENTORNO VIRTUAL-|
+source ~/"X"/bin/activate
+|-CREAR ARCHIVO DE MIGRACION-|
+python manage.py makemigrations profiles_api
+python manage.py migrate
+|--|
+|--|
+|--|
+|--|
+|--|
+|--|
+|--|
+|--|
+|--|
