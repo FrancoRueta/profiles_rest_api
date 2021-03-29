@@ -1,19 +1,50 @@
+|-CREAR ENTORNO VAGRANT-|
+*CMD en donde quieras el entorno :B*
+vagrant init ubuntu/"VersionLinux"
+
 |-INICIAR VAGRANT-|
 vagrant up
 vagrant ssh
+
 |-UNA VEZ DENTRO DE LINUX-|
 cd /vagrant/
+
+|-USAR UN ARCHIVO .PY DESDE LINUX-|
+python  <-- al principio
+
+|-CREAR ENTORNO VIRTUAL-|
+python -m venv ~/"X"
+
+|-DEPLOYEAR PAGINA WEB-|
+python manage.py runserver 0.0.0.0:9000
+
 |-ACTIVAR EL ENTORNO VIRTUAL-|
-source ~/"X"/bin/activate
+source ~/"X"/bin/activate    / deactivate
+
 |-CREAR ARCHIVO DE MIGRACION-|
 python manage.py makemigrations profiles_api
 python manage.py migrate
+
+|-INSTALAR PAQUETES via REQUIREMENTS.txt-|
+pip install -r requirements.txt
+
+|-NUEVO PROJECTO DJANGO|
+*Un projecto se refiere a la aplicacion entera, 
+incluyendo todas sus partes.*
+django-admin.py startproject profiles_project .
+
+|-NUEVA APP DENTRO DE NUESTRO PROYECTO-|
+"Una app es un submodulo del proyecto, es autosuficiente y
+no interviene con otras apps en el proyecto por lo cual, en
+teoria, deberias ser capaz de reutilizarlas en otros proyectos.
+En resumen, es un pequeño modulo django."
+
 |--|
+
 |--|
+
 |--|
+
 |--|
-|--|
-|--|
-|--|
-|--|
+
 |--|
