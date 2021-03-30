@@ -15,11 +15,11 @@ python  <-- al principio
 |-CREAR ENTORNO VIRTUAL-|
 python -m venv ~/"X"
 
-|-DEPLOYEAR PAGINA WEB-|
-python manage.py runserver 0.0.0.0:9000
-
 |-ACTIVAR EL ENTORNO VIRTUAL-|
 source ~/"X"/bin/activate    / deactivate
+
+|-DEPLOYEAR PAGINA WEB-|
+python manage.py runserver 0.0.0.0:9000
 
 |-CREAR ARCHIVO DE MIGRACION-|
 python manage.py makemigrations profiles_api
