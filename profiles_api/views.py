@@ -3,6 +3,15 @@ from rest_framework.response import Response
 from rest_framework import status
 from profiles_api import serializers
 
+
+#RESUMEN RAPIDO: 
+# *GET: Sirve para SACAR datos de nuestra BDD
+# *POST: Sirve para GUARDAR datos en nuestra BDD
+# *PUT: Sirve para ACTUALIZAR datos en nuestra BDD
+# *PATCH: Sirve para ACTUALIZAR datos de forma PARCIAL.
+# *DELETE: deletea :B
+
+
 class HelloApiView(APIView):
     #Testeo de API view.
     serializer_class = serializers.HelloSerializer
@@ -31,3 +40,15 @@ class HelloApiView(APIView):
             return Response(
                 serializer.errors,
                 status=status.HTTP_400_BAD_REQUEST)
+        
+    def put(self, request, pk=None): #pk = primary key
+        #Maneja la actualizacion de objetos.
+        return Response({'method':'PUT'})
+
+    def patch(self, request, pk=None):
+        #Maneja la actualizacion PARCIAL de objetos.
+        return Response({'method':'PATCH'})
+
+    def delete(self, request, pk=None):
+        #Roba datos.
+        return Response({'method':'DELETE'})
