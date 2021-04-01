@@ -5,13 +5,13 @@ _Este es un proyecto de practica, Principalmente estoy practicando la creacion d
 
 ### Pre-requisitos 📋
 
-Python 3.X
-Git
-Django
-Django Rest Framework
-Vagrant
-Oracle virtualbox
-Y algun interprete
+*Python 3.X
+*Git
+*Django
+*Django Rest Framework
+*Vagrant
+*Oracle virtualbox
+*Y algun interprete
 
 
 ## Despliegue 📦
