@@ -2,7 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from profiles_api import serializers
-
+from rest_framework import viewsets
 
 #RESUMEN RAPIDO: 
 # *GET: Sirve para SACAR datos de nuestra BDD
@@ -10,7 +10,6 @@ from profiles_api import serializers
 # *PUT: Sirve para ACTUALIZAR datos en nuestra BDD
 # *PATCH: Sirve para ACTUALIZAR datos de forma PARCIAL.
 # *DELETE: deletea :B
-
 
 class HelloApiView(APIView):
     #Testeo de API view.
@@ -52,3 +51,16 @@ class HelloApiView(APIView):
     def delete(self, request, pk=None):
         #Roba datos.
         return Response({'method':'DELETE'})
+
+
+class HelloViewSet(viewsets.ViewSet):
+    #Testeo de viewset.
+
+    def list(self, request):
+        #Devuelve un hola.
+        a_viewset = [
+            'Usa acciones (list, create, retrieve, update, partial_update).',
+            'mapea de forma automatica a URLs usando routers.',
+            'Brinda mas funcionalidad con menos codigo.'
+        ]
+        return Response({'message':'Hola!', 'a_viewset': a_viewset})
