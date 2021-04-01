@@ -37,7 +37,7 @@ python manage.py runserver "ip deseada"."puerto interno deseado" (ejemplo 0.0.0.
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
+Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](https://github.com/FrancoRueta/profiles_rest_api/blob/main/LICENSE) para detalles
 
 ## Expresiones de Gratitud y contacto 🎁
 
