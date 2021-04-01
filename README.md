@@ -5,13 +5,19 @@ _Este es un proyecto de practica, Principalmente estoy practicando la creacion d
 
 ### Pre-requisitos 📋
 
-*Python 3.X
-*Git
-*Django
-*Django Rest Framework
-*Vagrant
-*Oracle virtualbox
-*Y algun interprete
+* Python 3.X
+
+* Git
+
+* Django
+
+* Django Rest Framework
+
+* Vagrant
+
+* Oracle virtualbox
+
+* Y algun interprete
 
 
 ## Despliegue 📦
@@ -24,9 +30,6 @@ vagrant ssh
 cd /vagrant/
 python manage.py runserver "ip deseada"."puerto interno deseado" (ejemplo 0.0.0.0:9000)
 
-## Contribuyendo 🖇️
-
-
 
 ## Autor ✒️
 
@@ -36,6 +39,7 @@ python manage.py runserver "ip deseada"."puerto interno deseado" (ejemplo 0.0.0.
 
 Este proyecto está bajo la Licencia MIT - mira el archivo [LICENSE.md](LICENSE.md) para detalles
 
-## Expresiones de Gratitud 🎁
+## Expresiones de Gratitud y contacto 🎁
 
-* Si te interesan los proyectos que estoy realizando, podes contactarme! :)
+* Si te interesan los proyectos que estoy realizando, podes contactarme mediante email!
+> ruetafranco@gmail.com
